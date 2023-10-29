@@ -1,14 +1,9 @@
 <?php
 
-$num = 1;
-echo $num;
+define("TITLE", "Hello world!");
+echo TITLE. " php!";
 echo "<br />";
 
-$num += 1;
-echo $num;
-echo "<br />";
-
-$str = "cording";
-echo $str. " everybody";
-
+define("num", 10);
+echo var_dump(num);
 ?>
