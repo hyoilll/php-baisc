@@ -1,22 +1,10 @@
 <?php
 
-# gettype
-$num = 10;
-if (gettype($num) == "integer"){
-    echo "integer";
-}
-else {
-    echo "not integer";
-}
-echo "<br />";
+# $_get
 
-# settype
-settype($num, "string");
-echo var_dump($num);
-echo "<br />";
+$id = $_GET["id"];
+$pw = $_GET["pw"];
 
-# variable variables
-$title = "hello";
-$$title = "world";
-echo $hello;
+echo $id." ".$pw;
+
 ?>
