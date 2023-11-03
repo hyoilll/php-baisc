@@ -6,8 +6,13 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="http://127.0.0.1:8080" method="post">
-      <input type="text" name="name" />
+    <form
+      action="http://127.0.0.1:8080"
+      enctype="multipart/form-data"
+      method="post"
+    >
+      <input type="hidden" name="MAX_FILE_SIZE" value="400000" />
+      <input type="file" name="userfile" />
       <input type="submit" value="upload" />
     </form>
   </body>
